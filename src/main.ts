@@ -1,10 +1,15 @@
+import './main.scss';
+
 import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
+import VoidUI from 'void-ui';
+
+Vue.use(VoidUI);
 
 Vue.config.productionTip = false;
 
 new Vue({
   router,
-  render: (h) => h(App),
+  render: h => h(App)
 }).$mount('#app');
